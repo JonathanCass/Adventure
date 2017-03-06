@@ -75,29 +75,33 @@ while(gameflag==true){
 				advloc = 1;
 			}
 			else {
-				alert("The shop here is in complete shambles. It appears to have once been an Apothecary. After a thorough search you manage to find a single intact health potion")
+				alert("The shop here is in complete shambles. It appears to have once been an Apothecary. After a thorough search you manage to find a single intact health potion. Finding nothing else useful, you return west.")
+				advloc = 1;
 				potion = true;
 			}
 			break;
-		/*case 6:
+		case 6:
 			alert(" You enter the cave. Before you lies a wicked looking red dragon lying upon a massive horde of gold and jewels. He eyes you with a hungry grin and lunges forward on the attack!")
-			if (sword == true && shield == true && potion = true){
-				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging you sword in a powerful arc to decapitate the dragon. You quaff the healing potion lest you succumb to your burn and scratch wounds. You have defeated the dragon and lived. YOU WON THE GAME!")
+			if (sword == true && shield == true && potion == true){
+				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging your sword in a powerful arc to decapitate the beast. You quaff the healing potion lest you succumb to your burn and scratch wounds. You have defeated the dragon and lived. YOU WON THE GAME!")
 				gameflag = false;
 			}
-			else if (sword == true && shield == true && potion = false){
-				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging you sword in a powerful arc to decapitate the dragon. Alas you sustained too much damage during the fight and with no means to heal yourself, you succumb to your injuries. You defeated the dragon but you are dead. GAME OVER")
+			else if (sword == true && shield == true && potion == false){
+				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging your sword in a powerful arc to decapitate the beast. Alas you sustained too much damage during the fight and with no means to heal yourself, you succumb to your injuries. You defeated the dragon but you are dead. GAME OVER")
 				advloc = 7;
 			}
 			else{
-				" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. You spin around to see the dragon preparing a viscious flame breath attack and with no means to defend yourself from it you are killed. GAME OVER"
+				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. You spin around to see the dragon preparing a viscious flame breath attack and with no means to defend yourself from it you are killed. GAME OVER")
 				advloc = 7;
 			} 
-			break;*/
+			break;
 		case 7:
 			alert("You had a bad end. Don't give up try again!")
 			gameflag = confirm (" Would you like to try again?")
 			advloc = 1;
+			var shield = false
+			var sword = false
+			var potion = false
 			break;
 	}
 }

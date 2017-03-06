@@ -50,7 +50,7 @@ while(gameflag==true){
 						shield = true; 
 					}
 					else if(dirloc0 == "f" && sword == false){
-						alert(" Trying to grapple the skeleton with your bear hands was a bad decision. The monster is able to overpower you. Game Over!")
+						alert(" Trying to grapple the skeleton with your bear hands was a bad decision. The monster is able to overpower you. GAME OVER!")
 						advloc = 7;
 					}
 					else{
@@ -70,11 +70,30 @@ while(gameflag==true){
 			}
 			break;
 		case 5:
-			
+			if (potion){
+				alert("Previously you salvaged a health potion from the ruins of this shop but there is nothing else of any use here. You return west.")
+				advloc = 1;
+			}
+			else {
+				alert("The shop here is in complete shambles. It appears to have once been an Apothecary. After a thorough search you manage to find a single intact health potion")
+				potion = true;
+			}
 			break;
-		case 6:
-			
-			break;
+		/*case 6:
+			alert(" You enter the cave. Before you lies a wicked looking red dragon lying upon a massive horde of gold and jewels. He eyes you with a hungry grin and lunges forward on the attack!")
+			if (sword == true && shield == true && potion = true){
+				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging you sword in a powerful arc to decapitate the dragon. You quaff the healing potion lest you succumb to your burn and scratch wounds. You have defeated the dragon and lived. YOU WON THE GAME!")
+				gameflag = false;
+			}
+			else if (sword == true && shield == true && potion = false){
+				alert(" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. With your left arm you quickly raise up your shield to block the dragon's flame breath while swinging you sword in a powerful arc to decapitate the dragon. Alas you sustained too much damage during the fight and with no means to heal yourself, you succumb to your injuries. You defeated the dragon but you are dead. GAME OVER")
+				advloc = 7;
+			}
+			else{
+				" You roll away dodging the brunt of the dragons wicked claw attack but still take a significant amount of damage. You spin around to see the dragon preparing a viscious flame breath attack and with no means to defend yourself from it you are killed. GAME OVER"
+				advloc = 7;
+			} 
+			break;*/
 		case 7:
 			alert("You had a bad end. Don't give up try again!")
 			gameflag = confirm (" Would you like to try again?")

@@ -3,6 +3,7 @@ var shield = false
 var sword = false
 var potion = false
 var gameflag = true
+var score = 0
 
 while(gameflag==true){
 	switch (advloc){
